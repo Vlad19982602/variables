@@ -1,6 +1,7 @@
-const accordion = (triggersSelector, itemsSelector) => {
+const accordion = (triggersSelector, arrowSelector, itemsSelector) => {
     const btns = document.querySelectorAll(triggersSelector),
-		blocks = document.querySelectorAll(itemsSelector);
+		arrow = document.querySelectorAll(arrowSelector),
+        blocks = document.querySelectorAll(itemsSelector);
 
 	//blocks.forEach(block => {
 	//	block.classList.add('animated', 'fadeInDown');
@@ -29,6 +30,23 @@ const accordion = (triggersSelector, itemsSelector) => {
             }
         });
     });
+
+    arrow.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.classList.toggle('edu22-btn-arrow-open');
+        });
+    });
+
+    blocks.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.classList.toggle('edu22-title-open');
+        });
+    });
+
+
+    //this.classList.toggle('edu22-btn-arrow-open');
+    //this.classList.toggle('edu22-title-open');
+    //this.classList.toggle('edu22-btn-open');
 
     //   blocks = document.querySelectorAll(itemsSelector);
 

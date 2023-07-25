@@ -32,11 +32,11 @@
 }
 .edu22-box-open {
     padding-top: 20px;
-	color: $main-color;
+    border-bottom: none;
 }
 
 .edu22-title-open {
-    color: #FF6014;
+    color: $main-color;
 }
 .edu22-btn-open {
     /* border: 2px solid #FF6014; */
@@ -91,6 +91,8 @@
     height: 100%;
     transition-property: all;
     transition-duration: .5s;
+    border: 1px solid #000;
+    border-top: none;
 }
 
 .edu22-inner-desc-el {

@@ -5,7 +5,7 @@ import tabs from './modules/tabs.js';
 window.addEventListener('DOMContentLoaded', () => {
 
 	scrolling('.pageup');
-	accordion('.edu22-box', '.edu22-container-inner');
+	accordion('.edu22-box', '.edu22-btn-arrow', '.edu22-title-box');
 	tabs('.specialities-block__tabs', '.tabs-nav__item', '.tabs-content__item', 'current');
 });
 
